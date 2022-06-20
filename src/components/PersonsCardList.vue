@@ -2,11 +2,11 @@
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div class="col" v-for="person in persons" :key="person.id">
       <div class="card h-100">
-        <img :src="getAvatar(person)" class="card-img-top" :alt="person.firstName + ' ' + person.lastName">
+        <img :src="getAvatar(person)" class="card-img-top" :alt="person.firstname + ' ' + person.lastname">
         <div class="card-body">
-          <h5 class="card-title">{{ person.firstName }} {{ person.lastName }}</h5>
+          <h5 class="card-title">{{ person.firstname }} {{ person.lastname }}</h5>
           <p class="card-text">
-            {{ person.firstName }} {{ person.lastName }} ist {{ person.vaccinated ? 'geimpft' : 'nicht geimpft' }} und
+            {{ person.firstname }} {{ person.lastname }} ist {{ person.vaccinated ? 'geimpft' : 'nicht geimpft' }} und
             hat {{ person.pets.length }} Haustier(e).
           </p>
         </div>
